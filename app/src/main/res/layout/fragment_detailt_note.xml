@@ -1,13 +1,28 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.noteapp.DetailtNoteFragment">
+    tools:context="com.noteapp.DetailtNoteFragment"
+    android:padding="5dp">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <EditText
+        android:hint="Enter note title"
+        android:background="#FFBB00"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_detailt_note_tittle_text"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:hint="Enter note description"
+        android:background="#FFBB"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/fragment_detailt_note_description_text"
+        android:layout_below="@id/fragment_detailt_note_tittle_text"
+        android:gravity="top|left"
+        android:layout_marginTop="10dp"
+        />
 
-</FrameLayout>
+</RelativeLayout>
