@@ -13,7 +13,7 @@ public class Notes implements Enumerable<Note> {
 
     @Override
     public int count() {
-        return 0;
+        return noteList.size();
     }
 
     @Override
@@ -35,7 +35,9 @@ public class Notes implements Enumerable<Note> {
     }
 
     @Override
-    public List<Note> getAll() {
-        return noteList;
+    public List<Note> getAll() {return noteList;}
+
+    public Note get(int i){
+        return noteList.get(i);
     }
 }
